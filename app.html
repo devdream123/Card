@@ -1,74 +1,183 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+  <body>
+    <section class=" card-container">
+      <div class="row justify-content-start justify-content-md-center">
+        <div class=" card-container-title">
+          <h2 class="col-12 col-md-12">Shop by category</h2>
+        </div>
+      </div>
+      <div class="row  cards-container">
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="electronics"
+          href="https://www.qantasstore.com.au/c/Electronics/01"
+        >
+          <div class="card-content ">
+            <h5 class="card-title">
+              Electronics
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="travel"
+          href="https://www.qantasstore.com.au/c/Travel/02"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Travel
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="homeware"
+          href="https://www.qantasstore.com.au/c/Homewares/03"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Homeware
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets/Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="row cards-container">
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="home-appliances"
+          href="https://www.qantasstore.com.au/c/Home-Appliances/04"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Home appliances
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="outdoor"
+          href="https://www.qantasstore.com.au/c/Outdoor/05"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Outdoor
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="sports-fitness"
+          href="https://www.qantasstore.com.au/c/Sport-%26-Fitness/06"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Sports & Fitness
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="row cards-container">
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="fashion"
+          href="https://www.qantasstore.com.au/c/Fashion-accessories/07"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Fashion & Accessories
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="health-beauty"
+          href="https://www.qantasstore.com.au/c/Health-%26-beauty/08"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Health & beauty
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+        <span class="line"></span>
+        <a
+          class="card-box col-12 col-md-4"
+          id="toys-kids"
+          href="https://www.qantasstore.com.au/c/Toys%2C-Kids-%26-Baby/09"
+        >
+          <div class="card-content">
+            <h5 class="card-title">
+              Toys, Kids & Baby
+            </h5>
+            <span class="arrow-icon">
+              <img src="./assets//Arrow-right.svg" />
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="row cards-container"><span class="line"></span></div>
+    </section>
 
-    <body>
-        <section class="container-fluid container">
-            <div class="row">
-                <div class="card-box col-12 col-md-4">
-                    <div class="card-content">
-                        <h5 class="card-title">
-                            Electronics
-                        </h5>
-                    </div>
-                </div>
-                <div class="card-box col-12 col-md-4">
-                    <div class="card-content">
-                        <h5 class="card-title">
-                            Travel
-                        </h5>
-                    </div>
-                </div>
-                <div class="card-box col-12 col-md-4">
-                    <div class="card-content">
-                        <h5 class="card-title">
-                            Homeware
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card-box col-12 col-md-4">
-                    <div class="card-content">
-                        <h5 class="card-title">
-                            Electronics
-                        </h5>
-                    </div>
-                </div>
-                <div class="card-box col-12 col-md-4">
-                    <div class="card-content">
-                        <h5 class="card-title">
-                            Travel
-                        </h5>
-                    </div>
-                </div>
-                <div class="card-box col-12 col-md-4">
-                    <div class="card-content">
-                        <h5 class="card-title">
-                            Homeware
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-    </body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

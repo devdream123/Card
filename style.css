@@ -22,6 +22,15 @@
     .row :last-child {
       margin-right: 0; } }
 
+@media screen and (min-width: 720px) {
+  header,
+  .card-container-list {
+    padding: 0 60px; } }
+
+.is-contained {
+  max-width: 1024px;
+  margin: 0 auto; }
+
 #electronics {
   background-image: url(./assets/images/electronics.png); }
 
@@ -56,6 +65,8 @@
   .card-box:hover {
     text-decoration: none;
     box-shadow: 0 0 10px rgba(50, 50, 50, 0.5); }
+  .card-box:focus {
+    box-shadow: none; }
   @media screen and (min-width: 720px) {
     .card-box {
       display: flex;
@@ -88,11 +99,13 @@
   justify-content: left; }
   @media screen and (min-width: 720px) {
     .card-container-title {
-      position: relative;
-      top: 0;
-      left: 0; } }
+      display: flex;
+      align-self: left; } }
   .card-container-title h2 {
     font-size: 30px; }
+    @media screen and (min-width: 720px) {
+      .card-container-title h2 {
+        padding-left: 0; } }
 
 .card-content {
   position: relative;

@@ -8,6 +8,9 @@
 }
 
 $tablet: 720px;
+$laptop: 1024px;
+$laptopL: 1440px;
+
 $card-width: 283px;
 $card-height: 150px;
 
@@ -19,6 +22,7 @@ $card-height: 150px;
     margin: 0 auto;
   }
 }
+
 .row {
   margin: 0;
   padding: 0;
@@ -31,15 +35,31 @@ $card-height: 150px;
     }
   }
 }
+
+header,
+.card-container-list {
+  @media screen and(min-width: $tablet) {
+    padding: 0 60px;
+  }
+}
+
+.is-contained {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 #electronics {
   background-image: url(./assets/images/electronics.png);
 }
+
 #travel {
   background-image: url(./assets/images/travel.png);
 }
+
 #homeware {
   background-image: url(./assets/images/homeware.png);
 }
+
 #home-appliances {
   background-image: url(./assets/images/homeappliances.png);
 }
@@ -59,6 +79,7 @@ $card-height: 150px;
 #health-beauty {
   background-image: url(./assets/images/healthbeauty.png);
 }
+
 #toys-kids {
   background-image: url(./assets/images/toyskids.png);
 }
@@ -67,10 +88,16 @@ $card-height: 150px;
   background: #fff;
   position: relative;
   width: 100%;
+
   &:hover {
     text-decoration: none;
     box-shadow: 0 0 10px rgba(#323232, 0.5);
   }
+
+  &:focus {
+    box-shadow: none;
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     max-width: $card-width;
@@ -100,6 +127,7 @@ $card-height: 150px;
     }
   }
 }
+
 .card-container-title {
   @extend %common-font;
   padding: 29px 0 29px;
@@ -107,15 +135,16 @@ $card-height: 150px;
   justify-content: left;
 
   @media screen and(min-width: $tablet) {
-    // justify-content: left;
-    // position: relative;
-    // margin-left: 60px;
-    position: relative;
-    top: 0;
-    left: 0;
+    display: flex;
+    align-self: left;
   }
+
   h2 {
     font-size: 30px;
+
+    @media screen and(min-width: $tablet) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -158,6 +187,7 @@ $card-height: 150px;
   height: 2px;
   opacity: 0.4;
   border: solid 1px #979797;
+
   @media screen and(min-width: $tablet) {
     display: none;
   }

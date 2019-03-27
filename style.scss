@@ -30,15 +30,24 @@ $card-height: 150px;
   justify-content: center;
 
   @media screen and(min-width: $tablet) {
-    :last-child {
+    .card-box:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and(min-width: $laptop) {
+    .card-box:nth-child(3n) {
       margin-right: 0;
     }
   }
 }
 
-header,
-.card-container-list {
+header {
   @media screen and(min-width: $tablet) {
+    padding: 0 75px;
+  }
+
+  @media screen and(min-width: $laptop) {
     padding: 0 60px;
   }
 }
@@ -103,7 +112,7 @@ header,
     max-width: $card-width;
     height: $card-height;
     text-align: center;
-    align-items: center;
+    align-self: center;
     padding: 0 15px;
     background-size: cover;
     background-position: center;
@@ -132,11 +141,11 @@ header,
   @extend %common-font;
   padding: 29px 0 29px;
   display: flex;
-  justify-content: left;
+  // justify-content: left;
 
   @media screen and(min-width: $tablet) {
     display: flex;
-    align-self: left;
+    // align-self: left;
   }
 
   h2 {

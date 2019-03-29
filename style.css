@@ -1,17 +1,10 @@
 .card-container-title, .card-content {
-  font-family: Ciutadella;
+  font-family: Ciutadella, Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.58;
   letter-spacing: normal; }
-
-.container-fluid {
-  padding: 0;
-  margin: 0; }
-  @media screen and (min-width: 720px) {
-    .container-fluid {
-      margin: 0 auto; } }
 
 .row {
   margin: 0;
@@ -77,13 +70,11 @@
       display: flex;
       max-width: 283px;
       height: 150px;
-      text-align: center;
-      align-self: center;
-      padding: 0 15px;
       background-size: cover;
       background-position: center;
       margin-right: 27px;
-      margin-bottom: 27px; } }
+      margin-bottom: 27px;
+      border-radius: 4px; } }
   .card-box::before {
     content: "";
     position: absolute;
@@ -96,7 +87,8 @@
     height: 100%; }
     @media screen and (min-width: 720px) {
       .card-box::before {
-        background: rgba(50, 50, 50, 0.5); } }
+        background: rgba(50, 50, 50, 0.5);
+        border-radius: 4px; } }
 
 .card-container-title {
   padding: 29px 0 29px;
@@ -105,7 +97,7 @@
     .card-container-title {
       display: flex; } }
   .card-container-title h2 {
-    font-size: 30px; }
+    font-size: 35px; }
     @media screen and (min-width: 720px) {
       .card-container-title h2 {
         padding-left: 0; } }
